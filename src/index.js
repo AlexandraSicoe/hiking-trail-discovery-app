@@ -1,14 +1,97 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import HomePage from "./components/HomePage";
+import Layout from "./components/Layout";
+import NoPage from "./components/NoPage";
+import SavedTrailsPage from "./components/SavedTrailsPage";
+import TrailList from "./components/TrailList";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./index.css";
+import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route index element={<HomePage />} />
+        <Route path="saved-trails" element={<SavedTrailsPage />} />
+        <Route path="trail-list" element={<TrailList />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+const theme = extendTheme({
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          50: "#4a6741	 ",
+          100: "#4a6741	 ",
+          200: "#4a6741	 ",
+          300: "#4a6741	 ",
+          400: "#4a6741	 ",
+          500: "#4a6741	 ",
+          600: "#4a6741	 ",
+          700: "#4a6741	 ",
+          800: "#4a6741	 ",
+          900: "#4a6741	 ",
+        },
+        secondary: {
+          50: "#374f2f ",
+          100: "#F8C8DC	 ",
+          200: "#374f2f ",
+          300: "#374f2f ",
+          400: "#374f2f ",
+          500: "#374f2f ",
+          600: "#374f2f ",
+          700: "#374f2f ",
+          800: "#374f2f ",
+          900: "#374f2f ",
+        },
+      },
+    },
+    dark: {
+      palette: {
+        primary: {
+          100: "#4a6741	",
+          50: "#4a6741	",
+          200: "#4a6741	 ",
+          300: "#4a6741	",
+          400: "#4a6741	",
+          500: "#4a6741	",
+          600: "#4a6741	",
+          700: "#4a6741	",
+          800: "#4a6741	",
+          900: "#4a6741	",
+        },
+        secondary: {
+          50: "#E0BFB8	 ",
+          100: "#E0BFB8	 ",
+          200: "#E0BFB8	 ",
+          300: "#E0BFB8	 ",
+          400: "#E0BFB8	 ",
+          500: "#E0BFB8	 ",
+          600: "#E0BFB8	 ",
+          700: "#E0BFB8	 ",
+          800: "#E0BFB8	 ",
+          900: "#E0BFB8	 ",
+        },
+      },
+    },
+  },
+  Typography: {
+    fontFamily: "Fasthand, Belanosima",
+  },
+});
 root.render(
-  <React.StrictMode>
+  <CssVarsProvider theme={theme}>
     <App />
-  </React.StrictMode>
+  </CssVarsProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

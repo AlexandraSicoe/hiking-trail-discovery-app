@@ -1,0 +1,139 @@
+{
+  "trails": [
+    {
+      "id": 1,
+      "name": "Appalachian Trail",
+      "image": "url_to_image",
+      "location": "Eastern US",
+      "difficulty": "Hard",
+      "description": "The Appalachian Trail is a long hiking trail extending from Georgia to Maine.",
+      "details": "Length: 2,200 miles. High point: 6,643 feet. Low point: 124 feet."
+    },
+    {
+      "id": 2,
+      "name": "Pacific Crest Trail",
+      "image": "url_to_image",
+      "location": "Western US",
+      "difficulty": "Hard",
+      "description": "A long-distance hiking trail closely aligned with the highest portion of the Sierra Nevada and Cascade mountain ranges.",
+      "details": "Length: 2,653 miles. High point: 13,153 feet. Low point: 140 feet."
+    },
+    {
+      "id": 3,
+      "name": "Continental Divide Trail",
+      "image": "url_to_image",
+      "location": "US Rocky Mountains",
+      "difficulty": "Hard",
+      "description": "A long hiking trail that follows the Continental Divide along the Rocky Mountains.",
+      "details": "Length: 3,100 miles. High point: 14,278 feet. Low point: 3,900 feet."
+    },
+    {
+      "id": 4,
+      "name": "John Muir Trail",
+      "image": "url_to_image",
+      "location": "California, US",
+      "difficulty": "Hard",
+      "description": "A long-distance trail in the Sierra Nevada mountain range of California.",
+      "details": "Length: 211 miles. High point: 14,505 feet. Low point: 4,000 feet."
+    },
+    {
+      "id": 5,
+      "name": "Inca Trail to Machu Picchu",
+      "image": "url_to_image",
+      "location": "Peru",
+      "difficulty": "Moderate",
+      "description": "A hiking trail in Peru that terminates at Machu Picchu.",
+      "details": "Length: 26 miles. High point: 13,828 feet. Low point: 7,972 feet."
+    },
+    {
+      "id": 6,
+      "name": "Mount Kilimanjaro",
+      "image": "url_to_image",
+      "location": "Tanzania",
+      "difficulty": "Hard",
+      "description": "Several routes lead to the summit of the highest mountain in Africa.",
+      "details": "Length varies depending on route. High point: 19,341 feet."
+    },
+    {
+      "id": 7,
+      "name": "Overland Track",
+      "image": "url_to_image",
+      "location": "Tasmania, Australia",
+      "difficulty": "Moderate",
+      "description": "One of Australia's most famous bush treks, situated in the Tasmania Wilderness World Heritage Area.",
+      "details": "Length: 40 miles. High point: 4,429 feet."
+    },
+    {
+      "id": 8,
+      "name": "Laugavegur Trail",
+      "image": "url_to_image",
+      "location": "Iceland",
+      "difficulty": "Moderate",
+      "description": "A multi-day trek in the highlands of Iceland, known for its geothermal landscapes.",
+      "details": "Length: 34 miles."
+    },
+    {
+      "id": 9,
+      "name": "Tour du Mont Blanc",
+      "image": "url_to_image",
+      "location": "France, Italy, Switzerland",
+      "difficulty": "Hard",
+      "description": "A popular long-distance trek around Mont Blanc, passing through three different countries.",
+      "details": "Length: 105 miles."
+    },
+    {
+      "id": 10,
+      "name": "Tongariro Northern Circuit",
+      "image": "url_to_image",
+      "location": "New Zealand",
+      "difficulty": "Moderate",
+      "description": "One of the New Zealand's Great Walks, this trail circles the active volcanoes of Mt Tongariro and Mt Ngauruhoe.",
+      "details": "Length: 27 miles."
+    },
+    {
+      "id": 11,
+      "name": "The Haute Route",
+      "image": "url_to_image",
+      "location": "France, Switzerland",
+      "difficulty": "Hard",
+      "description": "A high-level traverse in the French and Swiss Alps, from Chamonix to Zermatt.",
+      "details": "Length: 112 miles."
+    },
+    {
+      "id": 12,
+      "name": "Everest Base Camp Trek",
+      "image": "url_to_image",
+      "location": "Nepal",
+      "difficulty": "Hard",
+      "description": "A famous trek to the base camp of Mount Everest, the world's highest mountain.",
+      "details": "Length: 80 miles."
+    },
+    {
+      "id": 13,
+      "name": "Te Araroa Trail",
+      "image": "url_to_image",
+      "location": "New Zealand",
+      "difficulty": "Hard",
+      "description": "A long distance trail running from the top of the North Island to the bottom of the South Island in New Zealand.",
+      "details": "Length: 1,864 miles."
+    },
+    {
+      "id": 14,
+      "name": "Camino de Santiago",
+      "image": "url_to_image",
+      "location": "Spain",
+      "difficulty": "Moderate",
+      "description": "A network of pilgrims' ways leading to the shrine of the apostle Saint James the Great in the cathedral of Santiago de Compostela in Galicia in northwestern Spain.",
+      "details": "Length: Varies. The most popular route (Camino Francés) is 490 miles."
+    },
+    {
+      "id": 15,
+      "name": "Fitz Roy Trek",
+      "image": "url_to_image",
+      "location": "Argentina",
+      "difficulty": "Moderate",
+      "description": "A trek in Patagonia to the base of the stunning Fitz Roy mountain.",
+      "details": "Length: 36 miles."
+    }
+  ]
+}

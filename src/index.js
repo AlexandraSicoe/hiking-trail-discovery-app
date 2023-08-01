@@ -1,13 +1,13 @@
+import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Layout from "./components/Layout";
 import NoPage from "./components/NoPage";
 import SavedTrailsPage from "./components/SavedTrailsPage";
 import TrailList from "./components/TrailList";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
-import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 
 import reportWebVitals from "./reportWebVitals";
 

@@ -13,7 +13,7 @@ const Navbar = () => {
       <Link to={"/"}>
         <Typography
           textAlign="center"
-          textColor="#4a6741"
+          textColor="#C7E8CA"
           sx={{
             fontSize: { xs: "25px" },
           }}

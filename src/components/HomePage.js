@@ -1,6 +1,11 @@
-import { Box } from "@mui/joy";
+import { Box, Grid } from "@mui/joy";
+import Navbar from "./Navbar";
 
 const HomePage = () => {
-  return <Box>Hello</Box>;
+  return (
+    <Grid>
+      <Navbar />
+    </Grid>
+  );
 };
 export default HomePage;

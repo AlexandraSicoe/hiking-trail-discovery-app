@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Appalachian Trail",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1600284536251-8bb98db53468?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "location": "Eastern US",
       "difficulty": "Hard",
       "description": "The Appalachian Trail is a long hiking trail extending from Georgia to Maine.",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "Pacific Crest Trail",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1551620808-fd410d797e71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
       "location": "Western US",
       "difficulty": "Hard",
       "description": "A long-distance hiking trail closely aligned with the highest portion of the Sierra Nevada and Cascade mountain ranges.",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "name": "Continental Divide Trail",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1563642421748-5047b6585a4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       "location": "US Rocky Mountains",
       "difficulty": "Hard",
       "description": "A long hiking trail that follows the Continental Divide along the Rocky Mountains.",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "John Muir Trail",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1501776192086-602832fae6e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "location": "California, US",
       "difficulty": "Hard",
       "description": "A long-distance trail in the Sierra Nevada mountain range of California.",
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "name": "Inca Trail to Machu Picchu",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1459294458679-97e81180a256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80",
       "location": "Peru",
       "difficulty": "Moderate",
       "description": "A hiking trail in Peru that terminates at Machu Picchu.",
@@ -48,7 +48,7 @@
     {
       "id": 6,
       "name": "Mount Kilimanjaro",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1621414050946-1b936a78491f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80",
       "location": "Tanzania",
       "difficulty": "Hard",
       "description": "Several routes lead to the summit of the highest mountain in Africa.",
@@ -57,7 +57,7 @@
     {
       "id": 7,
       "name": "Overland Track",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1507803648032-5ada6c09b591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "location": "Tasmania, Australia",
       "difficulty": "Moderate",
       "description": "One of Australia's most famous bush treks, situated in the Tasmania Wilderness World Heritage Area.",
@@ -66,7 +66,7 @@
     {
       "id": 8,
       "name": "Laugavegur Trail",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1555767425-236845e72de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "location": "Iceland",
       "difficulty": "Moderate",
       "description": "A multi-day trek in the highlands of Iceland, known for its geothermal landscapes.",
@@ -75,7 +75,7 @@
     {
       "id": 9,
       "name": "Tour du Mont Blanc",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1600417144323-4b616efd9bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       "location": "France, Italy, Switzerland",
       "difficulty": "Hard",
       "description": "A popular long-distance trek around Mont Blanc, passing through three different countries.",
@@ -84,7 +84,7 @@
     {
       "id": 10,
       "name": "Tongariro Northern Circuit",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1560419773-fbe0c959e563?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
       "location": "New Zealand",
       "difficulty": "Moderate",
       "description": "One of the New Zealand's Great Walks, this trail circles the active volcanoes of Mt Tongariro and Mt Ngauruhoe.",
@@ -93,7 +93,7 @@
     {
       "id": 11,
       "name": "The Haute Route",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1664190902849-758b98433252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1633&q=80",
       "location": "France, Switzerland",
       "difficulty": "Hard",
       "description": "A high-level traverse in the French and Swiss Alps, from Chamonix to Zermatt.",
@@ -102,7 +102,7 @@
     {
       "id": 12,
       "name": "Everest Base Camp Trek",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1661062479980-c519a2f14710?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
       "location": "Nepal",
       "difficulty": "Hard",
       "description": "A famous trek to the base camp of Mount Everest, the world's highest mountain.",
@@ -111,7 +111,7 @@
     {
       "id": 13,
       "name": "Te Araroa Trail",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1592169008759-12025e4a553f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "location": "New Zealand",
       "difficulty": "Hard",
       "description": "A long distance trail running from the top of the North Island to the bottom of the South Island in New Zealand.",
@@ -120,7 +120,7 @@
     {
       "id": 14,
       "name": "Camino de Santiago",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1615904594374-ac59c55bd003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       "location": "Spain",
       "difficulty": "Moderate",
       "description": "A network of pilgrims' ways leading to the shrine of the apostle Saint James the Great in the cathedral of Santiago de Compostela in Galicia in northwestern Spain.",
@@ -129,7 +129,7 @@
     {
       "id": 15,
       "name": "Fitz Roy Trek",
-      "image": "url_to_image",
+      "image": "https://images.unsplash.com/photo-1493724798364-c4ca5e3f5fd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1148&q=80",
       "location": "Argentina",
       "difficulty": "Moderate",
       "description": "A trek in Patagonia to the base of the stunning Fitz Roy mountain.",

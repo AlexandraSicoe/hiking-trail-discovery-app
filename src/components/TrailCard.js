@@ -4,7 +4,14 @@ import CardContent from "@mui/joy/CardContent";
 import { Grid, Box, Button } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
 
-const trailCard = ({ trail, setOpenModal, moreDetails, setMoreDetails }) => {
+const trailCard = ({
+  trail,
+  setOpenModal,
+  moreDetails,
+  setMoreDetails,
+  savedTrail,
+  setSavedTrail,
+}) => {
   return (
     <Grid
       container
@@ -73,14 +80,33 @@ const trailCard = ({ trail, setOpenModal, moreDetails, setMoreDetails }) => {
               </Typography>
             </Box>
           </Box>
-          <Box>
+          <Box
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             <Button
+              size="sm"
               onClick={() => {
                 setOpenModal(true);
                 setMoreDetails(moreDetails);
               }}
             >
               About the trail.
+            </Button>
+            <Button
+              size="sm"
+              sx={{ marginTop: "10px" }}
+              onClick={() => {
+                localStorage.setItem(
+                  "trail",
+                  JSON.stringify([...savedTrail, trail])
+                );
+                setSavedTrail([...savedTrail, trail]);
+              }}
+            >
+              <ion-icon name="add-outline"></ion-icon>
             </Button>
           </Box>
         </CardContent>

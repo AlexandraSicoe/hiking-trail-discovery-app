@@ -1,6 +1,6 @@
-import { Box, Grid, Typography } from "@mui/joy";
-import Navbar from "./Navbar";
+import { Grid, Typography } from "@mui/joy";
 import coverImage from "../images/cover.jpeg";
+import Navbar from "./Navbar";
 
 const HomePage = () => {
   return (

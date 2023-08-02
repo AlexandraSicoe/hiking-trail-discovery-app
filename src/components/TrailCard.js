@@ -1,10 +1,10 @@
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import CardCover from "@mui/joy/CardCover";
-import Grid from "@mui/joy/Grid";
+import { Grid, Box } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
 
-const trailCard = () => {
+const trailCard = ({ trail }) => {
   return (
     <Grid
       container
@@ -14,6 +14,7 @@ const trailCard = () => {
       lg={4}
       xl={3}
       justifyContent="center"
+      alignItems="center"
       sx={{ p: 1 }}
     >
       <Card
@@ -26,7 +27,7 @@ const trailCard = () => {
         }}
       >
         <CardCover>
-          <img src={trail.image}></img>
+          <img src={trail.image} alt=""></img>
         </CardCover>
         <CardCover
           sx={{
@@ -38,7 +39,7 @@ const trailCard = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "flex-end",
+            alignItems: "flex-start",
             height: "100px",
             flexDirection: "row",
           }}
@@ -47,16 +48,16 @@ const trailCard = () => {
             style={{
               width: "100%",
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "center",
               alignItems: "center",
             }}
           >
             <Box>
               <Typography level="h6" sx={{ color: "white" }}>
-                {flower.name}
+                Location: {trail.location}
               </Typography>
               <Typography level="h6" sx={{ color: "white" }}>
-                {flower.price} RON
+                Difficulty: {trail.difficulty}
               </Typography>
             </Box>
           </div>

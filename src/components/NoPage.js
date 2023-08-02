@@ -12,13 +12,13 @@ const NoPage = () => {
       alignItems="center"
       height="100%"
       style={{
-        backgroundColor: "white	",
+        backgroundColor: "black	",
         width: "100vw",
         height: "100vh",
         fontWeight: "400",
       }}
     >
-      <Typography level="h1" textAlign="center" textColor="#FAA0A0">
+      <Typography level="h1" textAlign="center" textColor="#C7E8CA">
         Error 404. Page not found.
       </Typography>
       <Link to="/">

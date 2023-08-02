@@ -58,7 +58,7 @@ const HomePage = () => {
           </Typography>
         </Grid>
         <Link to="/trail-list">
-          <Button sx={{ marginTop: "50px" }}>View Trail Listings</Button>
+          <Button sx={{ margin: "50px" }}>View Trail Listings</Button>
         </Link>
       </Grid>
     </>

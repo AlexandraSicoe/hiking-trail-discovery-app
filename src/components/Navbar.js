@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/joy";
+import { Grid, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -20,9 +20,6 @@ const Navbar = () => {
         >
           Peak Pursuit
         </Typography>
-      </Link>
-      <Link to="/trail-list">
-        <Button>View Trail Listings</Button>
       </Link>
     </Grid>
   );

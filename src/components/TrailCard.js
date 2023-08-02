@@ -1,6 +1,6 @@
 import Card from "@mui/joy/Card";
+import AspectRatio from "@mui/joy/AspectRatio";
 import CardContent from "@mui/joy/CardContent";
-import CardCover from "@mui/joy/CardCover";
 import { Grid, Box } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
 
@@ -15,52 +15,61 @@ const trailCard = ({ trail }) => {
       xl={3}
       justifyContent="center"
       alignItems="center"
-      sx={{ p: 1 }}
+      sx={{ p: 2 }}
     >
       <Card
-        component="li"
+        variant="outlined"
         sx={{
-          width: { xs: "100%", sm: 300 },
-          height: { xs: 200, sm: 400 },
+          width: { xs: "100%", sm: 400 },
+          height: { xs: 300, sm: 400 },
           marginRight: "15px",
           marginLeft: "15px",
+          backgroundColor: "black",
         }}
       >
-        <CardCover>
+        <Box>
+          <Typography
+            level="h4"
+            sx={{
+              textAlign: "center",
+              color: "#C7E8CA",
+            }}
+          >
+            {trail.name}
+          </Typography>
+        </Box>
+        <AspectRatio minHeight="120px" maxHeight="200px">
           <img src={trail.image} alt=""></img>
-        </CardCover>
-        <CardCover
-          sx={{
-            background:
-              "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
-          }}
-        />
+        </AspectRatio>
+        <CardContent></CardContent>
         <CardContent
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "flex-start",
+            alignItems: "flex-end",
             height: "100px",
             flexDirection: "row",
           }}
         >
-          <div
+          <Box
             style={{
               width: "100%",
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "space-between",
               alignItems: "center",
             }}
           >
-            <Box>
+            <Box style={{ maxWidth: "100px" }}>
               <Typography level="h6" sx={{ color: "white" }}>
                 Location: {trail.location}
               </Typography>
+            </Box>
+            <Box style={{ maxWidth: "100px" }}>
               <Typography level="h6" sx={{ color: "white" }}>
                 Difficulty: {trail.difficulty}
               </Typography>
             </Box>
-          </div>
+          </Box>
         </CardContent>
       </Card>
     </Grid>

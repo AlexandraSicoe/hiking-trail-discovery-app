@@ -8,14 +8,7 @@ const TrailList = () => {
   return (
     <>
       <Navbar />
-      <Grid
-        xs={12}
-        sm={8}
-        md={10}
-        container
-        justifyContent="center"
-        alignItems="center"
-      >
+      <Grid xs={12} sm={8} md={10} justifyContent="center" alignItems="center">
         <Grid
           container
           sx={{ flexGrow: 1, marginTop: "15px", marginBottom: "15px" }}

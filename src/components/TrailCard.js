@@ -33,7 +33,14 @@ const trailCard = ({
           m: 1,
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
+            flexDirection: "row",
+          }}
+        >
           <Typography
             level="h4"
             sx={{
@@ -43,6 +50,17 @@ const trailCard = ({
           >
             {trail.name}
           </Typography>
+          <Button
+            onClick={() => {
+              localStorage.setItem(
+                "trail",
+                JSON.stringify([...savedTrail, trail])
+              );
+              setSavedTrail([...savedTrail, trail]);
+            }}
+          >
+            <ion-icon name="add-outline"></ion-icon>
+          </Button>
         </Box>
         <AspectRatio minHeight="120px" maxHeight="200px">
           <img src={trail.image} alt=""></img>
@@ -84,6 +102,7 @@ const trailCard = ({
             style={{
               display: "flex",
               flexDirection: "column",
+              alignItems: "flex-end",
             }}
           >
             <Button
@@ -94,19 +113,6 @@ const trailCard = ({
               }}
             >
               About the trail.
-            </Button>
-            <Button
-              size="sm"
-              sx={{ marginTop: "10px" }}
-              onClick={() => {
-                localStorage.setItem(
-                  "trail",
-                  JSON.stringify([...savedTrail, trail])
-                );
-                setSavedTrail([...savedTrail, trail]);
-              }}
-            >
-              <ion-icon name="add-outline"></ion-icon>
             </Button>
           </Box>
         </CardContent>

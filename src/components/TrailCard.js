@@ -4,7 +4,7 @@ import CardContent from "@mui/joy/CardContent";
 import { Grid, Box, Button } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
 
-const trailCard = ({ trail }) => {
+const trailCard = ({ trail, setOpenModal, moreDetails, setMoreDetails }) => {
   return (
     <Grid
       container
@@ -74,7 +74,14 @@ const trailCard = ({ trail }) => {
             </Box>
           </Box>
           <Box>
-            <Button>About the trail.</Button>
+            <Button
+              onClick={() => {
+                setOpenModal(true);
+                setMoreDetails(moreDetails);
+              }}
+            >
+              About the trail.
+            </Button>
           </Box>
         </CardContent>
       </Card>

@@ -5,8 +5,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Layout from "./components/Layout";
 import NoPage from "./components/NoPage";
-import SavedTrailsPage from "./components/SavedTrailsPage";
 import TrailList from "./components/TrailList";
+import SavedTrailsList from "./components/SavedTrailsList";
+
 import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
@@ -18,8 +19,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route index element={<HomePage />} />
-        <Route path="saved-trails" element={<SavedTrailsPage />} />
         <Route path="trail-list" element={<TrailList />} />
+        <Route path="saved-trails-list" element={<SavedTrailsList />} />
+
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>

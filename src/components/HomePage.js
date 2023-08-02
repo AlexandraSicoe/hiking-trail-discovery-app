@@ -1,5 +1,6 @@
-import { Grid, Typography } from "@mui/joy";
+import { Box, Grid, Typography } from "@mui/joy";
 import Navbar from "./Navbar";
+import coverImage from "../images/cover.jpeg";
 
 const HomePage = () => {
   return (
@@ -7,21 +8,40 @@ const HomePage = () => {
       <Navbar />
       <Grid
         xs={12}
-        sm={8}
         container
         justifyContent="center"
         direction="column"
         alignItems="center"
         height="100%"
         style={{
-          paddingTop: "40px",
           margin: "auto",
+          backgroundImage: `url(${coverImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
-        <Typography level="h1" sx={{ color: "#4a6741", marginBottom: "50px" }}>
+        <Typography
+          level="h1"
+          sx={{
+            color: "#C7E8CA",
+            paddingTop: "50px",
+            textAlign: { xs: "center" },
+          }}
+        >
           Peak Pursuit
         </Typography>
-        <Typography level="h4" sx={{ color: "#557A46", maxWidth: "800px" }}>
+        <Typography
+          level="h5"
+          sx={{
+            padding: "50px",
+            color: "#C7E8CA",
+            fontSize: { xs: "20px", sm: "25px" },
+            maxWidth: "1000px",
+            marginBottom: "100px",
+            textAlign: { xs: "center" },
+          }}
+        >
           Embark on a journey of discovery as we unveil a curated collection of
           the most scenic and awe-inspiring mountain trails from around the
           world. From the rugged terrains of the Rocky Mountains to the serene

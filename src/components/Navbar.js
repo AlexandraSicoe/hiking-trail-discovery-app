@@ -22,9 +22,7 @@ const Navbar = () => {
         </Typography>
       </Link>
       <Link to="/trail-list">
-        <Button size="md" sx={{ fontSize: "20px" }}>
-          View Trail Listings
-        </Button>
+        <Button>View Trail Listings</Button>
       </Link>
     </Grid>
   );

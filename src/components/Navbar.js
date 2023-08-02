@@ -6,7 +6,7 @@ const Navbar = () => {
     <Grid
       xs={12}
       container
-      justifyContent="space-between"
+      justifyContent="center"
       alignItems="center"
       sx={{ backgroundColor: "black", p: 3 }}
     >

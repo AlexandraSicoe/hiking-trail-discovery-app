@@ -1,7 +1,7 @@
 import Card from "@mui/joy/Card";
 import AspectRatio from "@mui/joy/AspectRatio";
 import CardContent from "@mui/joy/CardContent";
-import { Grid, Box } from "@mui/joy";
+import { Grid, Box, Button } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
 
 const trailCard = ({ trail }) => {
@@ -21,10 +21,9 @@ const trailCard = ({ trail }) => {
         variant="outlined"
         sx={{
           width: { xs: "100%", sm: 400 },
-          height: { xs: 300, sm: 400 },
-          marginRight: "15px",
-          marginLeft: "15px",
+          height: { xs: 400, sm: 450 },
           backgroundColor: "black",
+          m: 1,
         }}
       >
         <Box>
@@ -41,34 +40,41 @@ const trailCard = ({ trail }) => {
         <AspectRatio minHeight="120px" maxHeight="200px">
           <img src={trail.image} alt=""></img>
         </AspectRatio>
-        <CardContent></CardContent>
+        <CardContent>
+          <Typography
+            level="body2"
+            sx={{ color: "white", textAlign: "center" }}
+          >
+            {trail.description}
+          </Typography>
+        </CardContent>
         <CardContent
           sx={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "space-between",
             alignItems: "flex-end",
-            height: "100px",
             flexDirection: "row",
           }}
         >
           <Box
             style={{
-              width: "100%",
               display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
+              flexDirection: "column",
             }}
           >
-            <Box style={{ maxWidth: "100px" }}>
-              <Typography level="h6" sx={{ color: "white" }}>
-                Location: {trail.location}
+            <Box>
+              <Typography level="body-sm" sx={{ color: "#C7E8CA" }}>
+                {trail.location}
               </Typography>
             </Box>
-            <Box style={{ maxWidth: "100px" }}>
-              <Typography level="h6" sx={{ color: "white" }}>
+            <Box>
+              <Typography level="body-sm" sx={{ color: "#C7E8CA" }}>
                 Difficulty: {trail.difficulty}
               </Typography>
             </Box>
+          </Box>
+          <Box>
+            <Button>About the trail.</Button>
           </Box>
         </CardContent>
       </Card>

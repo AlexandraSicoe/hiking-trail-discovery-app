@@ -23,7 +23,7 @@ const Navbar = () => {
       </Link>
 
       <Link to={"/saved-trails-list"}>
-        <Button size="lg">See your saved trails</Button>
+        <Button size="md">See your saved trails</Button>
       </Link>
     </Grid>
   );

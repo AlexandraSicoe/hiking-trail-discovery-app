@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/joy";
+import { Button, Grid, Typography, Box } from "@mui/joy";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import TrailCard from "./TrailCard";
@@ -19,43 +19,39 @@ const SavedTrailsList = () => {
   return (
     <>
       <Navbar />
-      <Grid
-        xs={12}
-        container
-        justifyContent="center"
-        direction="row"
-        alignItems="center"
-        height="100%"
-      >
-        <Typography
-          level="h1"
-          sx={{
-            color: "#C7E8CA",
-            paddingTop: "50px",
-            textAlign: { xs: "center" },
-          }}
-        >
-          Your saved trails:
-        </Typography>
-        {savedTrail?.map((trail, index) => {
-          return <TrailCard trail={trail} />;
-        })}
-        <Link to="/trail-list">
-          <Button size="lg" sx={{ margin: "50px" }}>
-            View Trail Listings
-          </Button>
-        </Link>
 
-        <Button
-          size="lg"
-          sx={{ margin: "50px" }}
-          onClick={() => {
-            localStorage.setItem("trail", "[]");
-            navigate("/");
+      <Grid xs={12} sm={8} md={10} justifyContent="center" alignItems="center">
+        <Typography
+          level="body1"
+          sx={{
+            color: "#027148",
+            p: 2,
           }}
         >
-          Save trails
-        </Button>
+          Your saved trails
+        </Typography>
+        <Grid container>
+          {savedTrail?.map((trail, index) => {
+            return <TrailCard trail={trail} />;
+          })}
+          <Box>
+            <Link to="/trail-list">
+              <Button size="lg" sx={{ margin: "50px" }}>
+                View Trail Listings
+              </Button>
+            </Link>
+            <Button
+              size="lg"
+              sx={{ margin: "50px" }}
+              onClick={() => {
+                localStorage.setItem("trail", "[]");
+                navigate("/");
+              }}
+            >
+              Save trails
+            </Button>
+          </Box>
+        </Grid>
       </Grid>
     </>
   );

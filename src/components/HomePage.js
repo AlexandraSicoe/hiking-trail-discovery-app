@@ -37,7 +37,8 @@ const HomePage = () => {
               textAlign: { xs: "center" },
             }}
           >
-            Explore the world!
+            Discover new
+            <Typography sx={{ fontStyle: "oblique" }}> trails!</Typography>
           </Typography>
           <Typography
             level="h5"

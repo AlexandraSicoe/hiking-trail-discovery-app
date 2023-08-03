@@ -29,7 +29,7 @@ const trailCard = ({
         sx={{
           width: { xs: "100%", sm: 400 },
           height: { xs: 400, sm: 450 },
-          backgroundColor: "black",
+          backgroundColor: "#013220",
           m: 1,
         }}
       >
@@ -59,7 +59,7 @@ const trailCard = ({
               setSavedTrail([...savedTrail, trail]);
             }}
           >
-            <ion-icon name="add-outline"></ion-icon>
+            <ion-icon name="bookmark-outline"></ion-icon>
           </Button>
         </Box>
         <AspectRatio minHeight="120px" maxHeight="200px">
@@ -112,7 +112,7 @@ const trailCard = ({
                 setMoreDetails(moreDetails);
               }}
             >
-              About the trail.
+              About the trail
             </Button>
           </Box>
         </CardContent>

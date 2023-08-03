@@ -2,18 +2,17 @@ import { Button, Grid, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import TrailCard from "./TrailCard";
-import trailsData from "../data/trails.json";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SavedTrailsList = () => {
-  const { trails } = trailsData;
-  const [savedTrail, setSavedTrail] = useState([]);
   const navigate = useNavigate();
+  const [savedTrail, setSavedTrail] = useState([]);
 
   useEffect(() => {
     let lsTrail = localStorage.getItem("trail");
     lsTrail = JSON.parse(lsTrail);
+    console.log(lsTrail);
     setSavedTrail(lsTrail ? lsTrail : []);
   }, []);
 
@@ -38,7 +37,7 @@ const SavedTrailsList = () => {
         >
           Your saved trails:
         </Typography>
-        {trails.map((trail, index) => {
+        {savedTrail?.map((trail, index) => {
           return <TrailCard trail={trail} />;
         })}
         <Link to="/trail-list">

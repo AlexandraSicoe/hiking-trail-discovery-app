@@ -2,16 +2,22 @@ import { Grid, Typography } from "@mui/joy";
 import trailsData from "../data/trails.json";
 import Navbar from "./Navbar";
 import TrailCard from "./TrailCard";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "@mui/joy/Modal";
 import ModalClose from "@mui/joy/ModalClose";
 import ModalDialog from "@mui/joy/ModalDialog";
 
 const TrailList = () => {
+  const [savedTrail, setSavedTrail] = useState([]);
   const { trails } = trailsData;
   const [openModal, setOpenModal] = useState(false);
   const [moreDetails, setMoreDetails] = useState("");
-
+  useEffect(() => {
+    let lsTrail = localStorage.getItem("trail");
+    lsTrail = JSON.parse(lsTrail);
+    console.log(lsTrail);
+    setSavedTrail(lsTrail ? lsTrail : []);
+  }, []);
   return (
     <>
       <Navbar />
@@ -28,6 +34,8 @@ const TrailList = () => {
                 moreDetails={trail.details}
                 setOpenModal={setOpenModal}
                 setMoreDetails={setMoreDetails}
+                savedTrail={savedTrail}
+                setSavedTrail={setSavedTrail}
               />
             );
           })}

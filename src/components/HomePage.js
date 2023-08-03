@@ -37,7 +37,7 @@ const HomePage = () => {
               textAlign: { xs: "center" },
             }}
           >
-            Peak Pursuit
+            Explore the world!
           </Typography>
           <Typography
             level="h5"

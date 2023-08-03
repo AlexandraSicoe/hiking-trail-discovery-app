@@ -52,6 +52,7 @@ const trailCard = ({
           </Typography>
           <Button
             onClick={() => {
+              console.log(trail, savedTrail);
               localStorage.setItem(
                 "trail",
                 JSON.stringify([...savedTrail, trail])

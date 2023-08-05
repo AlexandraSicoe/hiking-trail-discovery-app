@@ -1,8 +1,8 @@
-import { Button, Grid, Typography } from "@mui/joy";
+import { Box, Button, Grid, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 import coverImage from "../images/cover.jpeg";
+import Carousel from "./Carousel";
 import Navbar from "./Navbar";
-
 const HomePage = () => {
   return (
     <>
@@ -58,12 +58,15 @@ const HomePage = () => {
             an unforgettable experience for every wanderer.
           </Typography>
         </Grid>
-        <Link to="/trail-list">
-          <Button size="lg" sx={{ margin: "50px" }}>
-            View Trail Listings
-          </Button>
-        </Link>
+        <Box>
+          <Link to="/trail-list">
+            <Button size="lg" sx={{ margin: "50px" }}>
+              View Trail Listings
+            </Button>
+          </Link>
+        </Box>
       </Grid>
+      <Carousel />
     </>
   );
 };

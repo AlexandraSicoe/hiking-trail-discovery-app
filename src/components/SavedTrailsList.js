@@ -1,9 +1,8 @@
-import { Button, Grid, Typography, Box } from "@mui/joy";
-import { Link } from "react-router-dom";
+import { Button, Grid } from "@mui/joy";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import TrailCard from "./TrailCard";
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 const SavedTrailsList = () => {
   const navigate = useNavigate();

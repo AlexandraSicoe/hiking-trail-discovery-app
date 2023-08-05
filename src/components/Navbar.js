@@ -1,5 +1,4 @@
-import { Button, Grid, Typography } from "@mui/joy";
-import Box from "@mui/material/Box";
+import { Box, Button, Grid, Typography } from "@mui/joy";
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -17,17 +16,20 @@ const Navbar = () => {
         alignItems="center"
         sx={{ backgroundColor: "black", p: 3 }}
       >
-        <Link to={"/"}>
-          <Typography
-            textAlign="center"
-            textColor="#C7E8CA"
-            sx={{
-              fontSize: { xs: "25px" },
-            }}
-          >
-            Peak Pursuit
-          </Typography>
-        </Link>
+        <Box>
+          <Link to={"/"}>
+            <Typography
+              level="h2"
+              textAlign="center"
+              textColor="#C7E8CA"
+              sx={{
+                fontSize: { xs: "25px" },
+              }}
+            >
+              Peak Pursuit
+            </Typography>
+          </Link>
+        </Box>
 
         <Button
           onClick={() => {
@@ -35,18 +37,19 @@ const Navbar = () => {
           }}
           size="md"
         >
-          Open Drawer
+          See your saved trails
+          <div>
+            <Drawer
+              position="right"
+              open={drawerOpen}
+              onClose={() => setDrawerOpen(false)}
+            >
+              <Link to={"/saved-trails-list"}>
+                <Button size="md">See more details</Button>
+              </Link>
+            </Drawer>
+          </div>
         </Button>
-        <Link to={"/saved-trails-list"}>
-          <Button size="md">See your saved trails</Button>
-        </Link>
-        <div>
-          <Drawer
-            position="right"
-            open={drawerOpen}
-            onClose={() => setDrawerOpen(false)}
-          ></Drawer>
-        </div>
       </Grid>
     </>
   );

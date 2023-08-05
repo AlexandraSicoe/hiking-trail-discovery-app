@@ -20,37 +20,35 @@ const SavedTrailsList = () => {
     <>
       <Navbar />
 
-      <Grid xs={12} sm={8} md={10} justifyContent="center" alignItems="center">
-        <Typography
-          level="body1"
-          sx={{
-            color: "#027148",
-            p: 2,
-          }}
-        >
-          Your saved trails
-        </Typography>
+      <Grid
+        xs={12}
+        sm={8}
+        md={10}
+        justifyContent="center"
+        alignItems="center"
+        sx={{ p: 3 }}
+      >
         <Grid container>
           {savedTrail?.map((trail, index) => {
             return <TrailCard trail={trail} />;
           })}
-          <Box>
-            <Link to="/trail-list">
-              <Button size="lg" sx={{ margin: "50px" }}>
-                View Trail Listings
-              </Button>
-            </Link>
-            <Button
-              size="lg"
-              sx={{ margin: "50px" }}
-              onClick={() => {
-                localStorage.setItem("trail", "[]");
-                navigate("/");
-              }}
-            >
-              Save trails
+        </Grid>
+        <Grid container justifyContent="center" alignItems="center">
+          <Link to="/trail-list">
+            <Button size="lg" sx={{ margin: "50px" }}>
+              View Trail Listings
             </Button>
-          </Box>
+          </Link>
+          <Button
+            size="lg"
+            sx={{ margin: "50px" }}
+            onClick={() => {
+              localStorage.setItem("trail", "[]");
+              navigate("/");
+            }}
+          >
+            Save trails
+          </Button>
         </Grid>
       </Grid>
     </>

@@ -7,135 +7,208 @@
       "location": "Eastern US",
       "difficulty": "Hard",
       "description": "The Appalachian Trail is a long hiking trail extending from Georgia to Maine.",
+      "longDescription": "The Appalachian Trail is an epic long-distance hiking trail that stretches across the Eastern United States, covering a remarkable distance of 2,200 miles. It begins in Georgia's Springer Mountain and concludes in the majestic Katahdin, Maine. Known for its demanding terrain and diverse landscapes, the trail takes hikers through lush forests, challenging rocky sections, and serene meadows. With an elevation range from 124 feet at its lowest point to an impressive 6,643 feet at its highest, the trail offers a true test of endurance for those seeking an unforgettable journey through the heart of the Appalachian Mountains.",
       "details": "Length: 2,200 miles. High point: 6,643 feet. Low point: 124 feet.",
       "detailsImages": [
-        "https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+        "https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
       ]
     },
     {
       "id": 2,
       "name": "Pacific Crest Trail",
-      "image": "https://images.unsplash.com/photo-1551620808-fd410d797e71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1551620808-fd410d797e71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Western US",
       "difficulty": "Hard",
       "description": "A long-distance hiking trail closely aligned with the highest portion of the Sierra Nevada and Cascade mountain ranges.",
+      "longDescription": "Spanning the western United States for 2,653 miles, the Pacific Crest Trail is a meandering adventure that traverses some of the most awe-inspiring mountain ranges. From the Sierra Nevada's towering peaks to the volcanic Cascades, this trail takes hikers on a challenging journey through diverse ecosystems. With a high point of 13,153 feet and a low point of 140 feet, trekkers experience both the alpine grandeur and the desert expanses. The trail promises unforgettable vistas, showcasing the rugged beauty of the western landscapes while demanding resilience and determination from those who venture upon its path.",
       "details": "Length: 2,653 miles. High point: 13,153 feet. Low point: 140 feet."
     },
     {
       "id": 3,
       "name": "Continental Divide Trail",
-      "image": "https://images.unsplash.com/photo-1563642421748-5047b6585a4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1563642421748-5047b6585a4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "US Rocky Mountains",
       "difficulty": "Hard",
       "description": "A long hiking trail that follows the Continental Divide along the Rocky Mountains.",
+      "longDescription": "Winding its way for 3,100 miles along the spine of the US Rocky Mountains, the Continental Divide Trail offers an extraordinary backcountry experience. Following the Continental Divide's crest, hikers encounter a rugged and untamed environment, passing through alpine meadows, dense forests, and high passes. With a fluctuating altitude that ranges from 3,900 feet to the towering 14,278-foot heights of Grays Peak, this trail provides an opportunity to connect with nature on an elemental level, surrounded by the untamed beauty of the Rocky Mountains.",
       "details": "Length: 3,100 miles. High point: 14,278 feet. Low point: 3,900 feet."
     },
     {
       "id": 4,
       "name": "John Muir Trail",
-      "image": "https://images.unsplash.com/photo-1501776192086-602832fae6e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1501776192086-602832fae6e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "California, US",
       "difficulty": "Hard",
       "description": "A long-distance trail in the Sierra Nevada mountain range of California.",
+      "longDescription": "Nestled in the Sierra Nevada mountain range of California, the John Muir Trail is a 211-mile trek that immerses hikers in the breathtaking wilderness of the region. From its lowest point of 4,000 feet to the soaring 14,505-foot peak of Mount Whitney, this trail showcases the stark contrasts of the Sierra's landscapes. As you traverse through alpine lakes, lush meadows, and rugged peaks, you'll gain a deep appreciation for the beauty that inspired naturalist John Muir himself. The trail's challenges are matched only by its rewards, making it a must-do pilgrimage for outdoor enthusiasts.",
       "details": "Length: 211 miles. High point: 14,505 feet. Low point: 4,000 feet."
     },
     {
       "id": 5,
       "name": "Inca Trail to Machu Picchu",
-      "image": "https://images.unsplash.com/photo-1459294458679-97e81180a256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1459294458679-97e81180a256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Peru",
       "difficulty": "Moderate",
       "description": "A hiking trail in Peru that terminates at Machu Picchu.",
+      "longDescription": "",
       "details": "Length: 26 miles. High point: 13,828 feet. Low point: 7,972 feet."
     },
     {
       "id": 6,
       "name": "Mount Kilimanjaro",
-      "image": "https://images.unsplash.com/photo-1621414050946-1b936a78491f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1621414050946-1b936a78491f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Tanzania",
       "difficulty": "Hard",
       "description": "Several routes lead to the summit of the highest mountain in Africa.",
+      "longDescription": "Nestled in the Sierra Nevada mountain range of California, the John Muir Trail is a 211-mile trek that immerses hikers in the breathtaking wilderness of the region. From its lowest point of 4,000 feet to the soaring 14,505-foot peak of Mount Whitney, this trail showcases the stark contrasts of the Sierra's landscapes. As you traverse through alpine lakes, lush meadows, and rugged peaks, you'll gain a deep appreciation for the beauty that inspired naturalist John Muir himself. The trail's challenges are matched only by its rewards, making it a must-do pilgrimage for outdoor enthusiasts.",
       "details": "Length varies depending on route. High point: 19,341 feet."
     },
     {
       "id": 7,
       "name": "Overland Track",
-      "image": "https://images.unsplash.com/photo-1507803648032-5ada6c09b591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1507803648032-5ada6c09b591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Tasmania, Australia",
       "difficulty": "Moderate",
       "description": "One of Australia's most famous bush treks, situated in the Tasmania Wilderness World Heritage Area.",
+      "longDescription": "Nestled in the Sierra Nevada mountain range of California, the John Muir Trail is a 211-mile trek that immerses hikers in the breathtaking wilderness of the region. From its lowest point of 4,000 feet to the soaring 14,505-foot peak of Mount Whitney, this trail showcases the stark contrasts of the Sierra's landscapes. As you traverse through alpine lakes, lush meadows, and rugged peaks, you'll gain a deep appreciation for the beauty that inspired naturalist John Muir himself. The trail's challenges are matched only by its rewards, making it a must-do pilgrimage for outdoor enthusiasts.",
       "details": "Length: 40 miles. High point: 4,429 feet."
     },
     {
       "id": 8,
       "name": "Laugavegur Trail",
-      "image": "https://images.unsplash.com/photo-1555767425-236845e72de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1555767425-236845e72de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Iceland",
       "difficulty": "Moderate",
       "description": "A multi-day trek in the highlands of Iceland, known for its geothermal landscapes.",
+      "longDescription": "Nestled in Iceland's highlands, the Laugavegur Trail is a 34-mile adventure renowned for its geothermal wonders. This moderate trek takes hikers through an otherworldly landscape of hot springs, colorful rhyolite mountains, and glaciers. Starting in Landmannalaugar and ending in Thorsmork, the trail offers a surreal journey through some of Iceland's most captivating scenery. As you traverse this unique environment, you'll witness the dramatic interplay between fire and ice that defines Iceland's geological character.",
       "details": "Length: 34 miles."
     },
     {
       "id": 9,
       "name": "Tour du Mont Blanc",
-      "image": "https://images.unsplash.com/photo-1600417144323-4b616efd9bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+      "image": [
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1600417144323-4b616efd9bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+      ],
       "location": "France, Italy, Switzerland",
       "difficulty": "Hard",
       "description": "A popular long-distance trek around Mont Blanc, passing through three different countries.",
+      "longDescription": "For those seeking a European alpine experience, the Tour du Mont Blanc is a 105-mile trail that circles the majestic Mont Blanc massif, spanning France, Italy, and Switzerland. This challenging route leads through picturesque villages, lush valleys, and soaring mountain passes, showcasing the beauty of the Alps in all their grandeur. With views of towering peaks, glacial valleys, and charming alpine culture, this trail presents a true feast for the senses and a memorable journey through three distinct countries.",
       "details": "Length: 105 miles."
     },
     {
       "id": 10,
       "name": "Tongariro Northern Circuit",
-      "image": "https://images.unsplash.com/photo-1560419773-fbe0c959e563?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1560419773-fbe0c959e563?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "New Zealand",
       "difficulty": "Moderate",
       "description": "One of the New Zealand's Great Walks, this trail circles the active volcanoes of Mt Tongariro and Mt Ngauruhoe.",
+      "longDescription": "New Zealand's Tongariro Northern Circuit is a 27-mile hike that winds through the captivating landscapes of Mount Tongariro and Mount Ngauruhoe. As one of the Great Walks of New Zealand, this trail offers a moderate challenge with stunning rewards. Trekkers traverse volcanic terrain, vividly colored lakes, and thermal springs, all set against the backdrop of these iconic volcanoes. The circuit encapsulates the raw beauty of New Zealand's North Island, combining natural wonders with a touch of geothermal wonder.",
       "details": "Length: 27 miles."
     },
     {
       "id": 11,
       "name": "The Haute Route",
-      "image": "https://images.unsplash.com/photo-1664190902849-758b98433252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1633&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1664190902849-758b98433252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1633&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "France, Switzerland",
       "difficulty": "Hard",
       "description": "A high-level traverse in the French and Swiss Alps, from Chamonix to Zermatt.",
+      "longDescription": "New Zealand's Tongariro Northern Circuit is a 27-mile hike that winds through the captivating landscapes of Mount Tongariro and Mount Ngauruhoe. As one of the Great Walks of New Zealand, this trail offers a moderate challenge with stunning rewards. Trekkers traverse volcanic terrain, vividly colored lakes, and thermal springs, all set against the backdrop of these iconic volcanoes. The circuit encapsulates the raw beauty of New Zealand's North Island, combining natural wonders with a touch of geothermal wonder.",
       "details": "Length: 112 miles."
     },
     {
       "id": 12,
       "name": "Everest Base Camp Trek",
-      "image": "https://images.unsplash.com/photo-1661062479980-c519a2f14710?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1661062479980-c519a2f14710?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Nepal",
       "difficulty": "Hard",
       "description": "A famous trek to the base camp of Mount Everest, the world's highest mountain.",
+      "longDescription": "Embark on a legendary journey to the base camp of the world's highest mountain, Mount Everest. The 80-mile trek in Nepal combines strenuous hikes with breathtaking views of the Himalayas. Passing through Sherpa villages and rhododendron forests, trekkers witness the rich local culture and dramatic landscapes. The trail culminates at Everest Base Camp, where you can soak in the awe-inspiring presence of the towering peaks that have captured human imagination for generations.",
       "details": "Length: 80 miles."
     },
     {
       "id": 13,
       "name": "Te Araroa Trail",
-      "image": "https://images.unsplash.com/photo-1592169008759-12025e4a553f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1592169008759-12025e4a553f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "New Zealand",
       "difficulty": "Hard",
       "description": "A long distance trail running from the top of the North Island to the bottom of the South Island in New Zealand.",
+      "longDescription": "For the ultimate New Zealand adventure, the Te Araroa Trail spans an incredible 1,864 miles, traversing the entire length of the country from the North Island to the South Island. This challenging trail showcases New Zealand's diverse landscapes, taking hikers through forests, mountains, beaches, and cities. With a mix of solitude and cultural exploration, the trail offers an opportunity to immerse oneself in the natural beauty and unique experiences that New Zealand has to offer.",
       "details": "Length: 1,864 miles."
     },
     {
       "id": 14,
       "name": "Camino de Santiago",
-      "image": "https://images.unsplash.com/photo-1615904594374-ac59c55bd003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1615904594374-ac59c55bd003?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Spain",
       "difficulty": "Moderate",
       "description": "A network of pilgrims' ways leading to the shrine of the apostle Saint James the Great in the cathedral of Santiago de Compostela in Galicia in northwestern Spain.",
+      "longDescription": "For the ultimate New Zealand adventure, the Te Araroa Trail spans an incredible 1,864 miles, traversing the entire length of the country from the North Island to the South Island. This challenging trail showcases New Zealand's diverse landscapes, taking hikers through forests, mountains, beaches, and cities. With a mix of solitude and cultural exploration, the trail offers an opportunity to immerse oneself in the natural beauty and unique experiences that New Zealand has to offer.",
       "details": "Length: Varies. The most popular route (Camino Francés) is 490 miles."
     },
     {
       "id": 15,
       "name": "Fitz Roy Trek",
-      "image": "https://images.unsplash.com/photo-1493724798364-c4ca5e3f5fd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1148&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1493724798364-c4ca5e3f5fd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1148&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Argentina",
       "difficulty": "Moderate",
       "description": "A trek in Patagonia to the base of the stunning Fitz Roy mountain.",
+      "longDescription": "Located in Argentina's Patagonia region, the Fitz Roy Trek is a 36-mile path that leads adventurers to the base of the stunning Fitz Roy mountain. This moderate trail offers unparalleled views of towering peaks, glaciers, and turquoise lakes. Beginning in the picturesque town of El Chaltén, hikers journey through awe-inspiring landscapes that embody Patagonia's wild and rugged beauty, making it a must-visit for those seeking a true wilderness experience.",
       "details": "Length: 36 miles."
     }
   ]

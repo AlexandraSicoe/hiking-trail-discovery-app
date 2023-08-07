@@ -38,18 +38,20 @@ const Navbar = () => {
           size="md"
         >
           See your saved trails
-          <div>
-            <Drawer
-              position="right"
-              open={drawerOpen}
-              onClose={() => setDrawerOpen(false)}
-            >
-              <Link to={"/saved-trails-list"}>
-                <Button size="md">See more details</Button>
-              </Link>
-            </Drawer>
-          </div>
         </Button>
+        <Drawer
+          position="right"
+          open={drawerOpen}
+          onClose={() => {
+            console.log("meow");
+            setDrawerOpen(false);
+            console.log("meow");
+          }}
+        >
+          <Link to={"/saved-trails-list"}>
+            <Button size="md">See more details</Button>
+          </Link>
+        </Drawer>
       </Grid>
     </>
   );

@@ -21,6 +21,7 @@ export default function Drawer({
   sx,
   ...props
 }: DrawerProps) {
+  console.log(props.open);
   return (
     <Modal
       keepMounted
@@ -30,10 +31,10 @@ export default function Drawer({
           transitionDelay: props.open ? "0s" : "300ms",
           [`& .${modalClasses.backdrop}`]: {
             opacity: props.open ? 1 : 0,
-            transition: "opacity 0.3s ease"
-          }
+            transition: "opacity 0.3s ease",
+          },
         },
-        ...(Array.isArray(sx) ? sx : [sx])
+        ...(Array.isArray(sx) ? sx : [sx]),
       ]}
       {...props}
     >
@@ -46,24 +47,24 @@ export default function Drawer({
           overflow: "auto",
           ...(position === "left" && {
             left: 0,
-            transform: props.open ? "translateX(0)" : "translateX(-100%)"
+            transform: props.open ? "translateX(0)" : "translateX(-100%)",
           }),
           ...(position === "right" && {
             right: 0,
-            transform: props.open ? "translateX(0)" : "translateX(100%)"
+            transform: props.open ? "translateX(0)" : "translateX(100%)",
           }),
           ...(position === "top" && {
             top: 0,
-            transform: props.open ? "translateY(0)" : "translateY(-100%)"
+            transform: props.open ? "translateY(0)" : "translateY(-100%)",
           }),
           ...(position === "bottom" && {
             bottom: 0,
-            transform: props.open ? "translateY(0)" : "translateY(100%)"
+            transform: props.open ? "translateY(0)" : "translateY(100%)",
           }),
           height: position.match(/(left|right)/) ? "100%" : size,
           width: position.match(/(top|bottom)/) ? "100vw" : size,
           boxShadow: "md",
-          transition: "transform 0.3s ease"
+          transition: "transform 0.3s ease",
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>

@@ -1,12 +1,20 @@
-import { Button, Grid } from "@mui/joy";
+import { Button, Grid, Typography } from "@mui/joy";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import trailsData from "../data/trails.json";
+
 import TrailCard from "./TrailCard";
+import Modal from "@mui/joy/Modal";
+import ModalClose from "@mui/joy/ModalClose";
+import ModalDialog from "@mui/joy/ModalDialog";
 
 const SavedTrailsList = () => {
   const navigate = useNavigate();
   const [savedTrail, setSavedTrail] = useState([]);
+  const { trails } = trailsData;
+  const [openModal, setOpenModal] = useState(false);
+  const [moreDetails, setMoreDetails] = useState("");
 
   useEffect(() => {
     let lsTrail = localStorage.getItem("trail");
@@ -29,7 +37,17 @@ const SavedTrailsList = () => {
       >
         <Grid container>
           {savedTrail?.map((trail, index) => {
-            return <TrailCard trail={trail} />;
+            return (
+              <TrailCard
+                key={index}
+                trail={trail}
+                moreDetails={trail.details}
+                setOpenModal={setOpenModal}
+                setMoreDetails={setMoreDetails}
+                savedTrail={savedTrail}
+                setSavedTrail={setSavedTrail}
+              />
+            );
           })}
         </Grid>
         <Grid container justifyContent="center" alignItems="center">
@@ -49,6 +67,26 @@ const SavedTrailsList = () => {
             Save trails
           </Button>
         </Grid>
+        <Modal open={openModal}>
+          <ModalDialog
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              width: "200px",
+              height: "200px",
+              backgroundColor: "#C7E8CA",
+            }}
+          >
+            <ModalClose
+              onClick={() => {
+                setOpenModal(false);
+              }}
+            />
+            <Typography level="h5" sx={{ textAlign: "center" }}>
+              {moreDetails}
+            </Typography>
+          </ModalDialog>
+        </Modal>
       </Grid>
     </>
   );

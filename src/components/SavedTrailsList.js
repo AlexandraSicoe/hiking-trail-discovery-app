@@ -2,7 +2,6 @@ import { Button, Grid, Typography } from "@mui/joy";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
-import trailsData from "../data/trails.json";
 
 import TrailCard from "./TrailCard";
 import Modal from "@mui/joy/Modal";
@@ -12,7 +11,6 @@ import ModalDialog from "@mui/joy/ModalDialog";
 const SavedTrailsList = () => {
   const navigate = useNavigate();
   const [savedTrail, setSavedTrail] = useState([]);
-  const { trails } = trailsData;
   const [openModal, setOpenModal] = useState(false);
   const [moreDetails, setMoreDetails] = useState("");
 
@@ -25,7 +23,7 @@ const SavedTrailsList = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar savedTrail={savedTrail} />
 
       <Grid
         xs={12}

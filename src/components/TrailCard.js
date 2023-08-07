@@ -52,15 +52,36 @@ const trailCard = ({
           </Typography>
           <Button
             onClick={() => {
-              console.log(trail, savedTrail);
-              localStorage.setItem(
-                "trail",
-                JSON.stringify([...savedTrail, trail])
+              const trailIndex = savedTrail.findIndex(
+                (item) => item.id === trail.id
               );
-              setSavedTrail([...savedTrail, trail]);
+
+              if (trailIndex !== -1) {
+                // Trail is already in savedTrail, so remove it
+                const updatedSavedTrail = savedTrail.filter(
+                  (_, index) => index !== trailIndex
+                );
+                localStorage.setItem(
+                  "trail",
+                  JSON.stringify(updatedSavedTrail)
+                );
+                setSavedTrail(updatedSavedTrail);
+              } else {
+                // Trail is not in savedTrail, so add it
+                const updatedSavedTrail = [...savedTrail, trail];
+                localStorage.setItem(
+                  "trail",
+                  JSON.stringify(updatedSavedTrail)
+                );
+                setSavedTrail(updatedSavedTrail);
+              }
             }}
           >
-            <ion-icon name="bookmark-outline"></ion-icon>
+            {savedTrail.some((obj) => obj.id === trail.id) ? (
+              <ion-icon name="bookmark"></ion-icon>
+            ) : (
+              <ion-icon name="bookmark-outline"></ion-icon>
+            )}
           </Button>
         </Box>
         <AspectRatio minHeight="120px" maxHeight="200px">

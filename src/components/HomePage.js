@@ -1,18 +1,24 @@
 import { Box, Button, Grid, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/bundle";
 import trailsData from "../data/trails.json";
-import CarouselImg1 from "../images/c1.avif";
-import CarouselImg2 from "../images/c2.avif";
-import CarouselImg3 from "../images/c3.avif";
 import coverImage from "../images/cover.jpeg";
 import Navbar from "./Navbar";
 const HomePage = () => {
   const { trails } = trailsData;
+  const [savedTrail, setSavedTrail] = useState([]);
+
+  useEffect(() => {
+    let lsTrail = localStorage.getItem("trail");
+    lsTrail = JSON.parse(lsTrail);
+    console.log(lsTrail);
+    setSavedTrail(lsTrail ? lsTrail : []);
+  }, []);
   return (
     <>
-      <Navbar />
+      <Navbar savedTrail={savedTrail} />
       <Grid
         xs={12}
         container

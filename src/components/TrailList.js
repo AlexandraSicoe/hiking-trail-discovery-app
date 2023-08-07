@@ -20,7 +20,7 @@ const TrailList = () => {
   }, []);
   return (
     <>
-      <Navbar />
+      <Navbar savedTrail={savedTrail} />
       <Grid xs={12} sm={8} md={10} justifyContent="center" alignItems="center">
         <Grid container sx={{ marginTop: "15px", marginBottom: "15px" }}>
           {trails.map((trail, index) => {

@@ -43,9 +43,7 @@ const Navbar = () => {
           position="right"
           open={drawerOpen}
           onClose={() => {
-            console.log("meow");
             setDrawerOpen(false);
-            console.log("meow");
           }}
         >
           <Link to={"/saved-trails-list"}>

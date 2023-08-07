@@ -21,7 +21,6 @@ export default function Drawer({
   sx,
   ...props
 }: DrawerProps) {
-  console.log(props.open);
   return (
     <Modal
       keepMounted

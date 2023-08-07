@@ -5,12 +5,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Layout from "./components/Layout";
 import NoPage from "./components/NoPage";
-import TrailList from "./components/TrailList";
 import SavedTrailsList from "./components/SavedTrailsList";
-
+import TrailList from "./components/TrailList";
+// import function to register Swiper custom elements
+import { register } from "swiper/element/bundle";
 import "./index.css";
-
 import reportWebVitals from "./reportWebVitals";
+
+// register Swiper custom elements
+register();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const App = () => {

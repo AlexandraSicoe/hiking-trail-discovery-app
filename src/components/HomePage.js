@@ -1,9 +1,15 @@
 import { Box, Button, Grid, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/bundle";
+import trailsData from "../data/trails.json";
+import CarouselImg1 from "../images/c1.avif";
+import CarouselImg2 from "../images/c2.avif";
+import CarouselImg3 from "../images/c3.avif";
 import coverImage from "../images/cover.jpeg";
-import Carousel from "./Carousel";
 import Navbar from "./Navbar";
 const HomePage = () => {
+  const { trails } = trailsData;
   return (
     <>
       <Navbar />
@@ -21,6 +27,7 @@ const HomePage = () => {
           direction="column"
           alignItems="center"
           width="100%"
+          height="75vh"
           style={{
             margin: "auto",
             backgroundImage: `url(${coverImage})`,
@@ -47,7 +54,6 @@ const HomePage = () => {
               color: "#C7E8CA",
               fontSize: { xs: "20px", sm: "25px" },
               maxWidth: "1000px",
-              marginBottom: "100px",
               textAlign: { xs: "center" },
             }}
           >
@@ -57,16 +63,39 @@ const HomePage = () => {
             beauty of the Swiss Alps, our diverse selection of trails guarantees
             an unforgettable experience for every wanderer.
           </Typography>
+          <Box>
+            <Link to="/trail-list">
+              <Button size="lg" sx={{ margin: "20px" }}>
+                View Trail Listings
+              </Button>
+            </Link>
+          </Box>
         </Grid>
-        <Box>
-          <Link to="/trail-list">
-            <Button size="lg" sx={{ margin: "50px" }}>
-              View Trail Listings
-            </Button>
-          </Link>
-        </Box>
       </Grid>
-      <Carousel />
+      <swiper-container
+        autoplay-delay="3000"
+        // autoplay-disable-on-interaction="false"
+        loop="true"
+      >
+        {trails?.map((trail, index) => {
+          return (
+            <swiper-slide>
+              <Box
+                display="flex"
+                justifyContent="center"
+                style={{
+                  height: "100vh",
+                  width: "100vw",
+                  backgroundImage: `url(${trail.image})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></Box>
+            </swiper-slide>
+          );
+        })}
+      </swiper-container>
     </>
   );
 };

@@ -42,7 +42,7 @@ const TrailList = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              backgroundColor: "#C7E8CA",
+              background: "linear-gradient(#C7E8CA,#91d297)",
               width: "100%",
               height: "100%",
               border: "5px solid #013220",

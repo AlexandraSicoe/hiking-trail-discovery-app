@@ -70,6 +70,9 @@ const SavedTrailsList = () => {
               display: "flex",
               justifyContent: "center",
               backgroundColor: "#C7E8CA",
+              width: "100%",
+              height: "100%",
+              border: "5px solid #013220",
             }}
           >
             <ModalClose
@@ -77,28 +80,92 @@ const SavedTrailsList = () => {
                 setOpenModal(false);
               }}
             />
-            <Typography level="h5" sx={{ textAlign: "center" }}>
+            <Typography
+              level="h2"
+              textColor="#013220"
+              sx={{
+                textAlign: "center",
+                marginBottom: "5px",
+              }}
+            >
+              {trailForModal?.name}
+            </Typography>
+            <Typography
+              textColor="#013220"
+              level="h6"
+              sx={{ textAlign: "center", marginBottom: "20px" }}
+            >
               {trailForModal?.details}
             </Typography>
-            <Typography level="body1">
-              {trailForModal?.longDescription}
-            </Typography>
-            {trailForModal?.image?.map((image, index) => {
-              return (
-                <swiper-slide>
-                  <Box
-                    display="flex"
-                    justifyContent="center"
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Typography
+                level="h4"
+                textColor="#013220"
+                sx={{ textAlign: "start", marginBottom: "20px" }}
+              >
+                Did you know?
+              </Typography>
+              <Typography
+                textColor="#013220"
+                level="h6"
+                sx={{
+                  marginBottom: "50px",
+                  textAlign: "center",
+                  maxWidth: "1000px",
+                }}
+              >
+                {trailForModal?.longDescription}
+              </Typography>
+            </Box>
+            <swiper-container
+              effect="coverflow"
+              grab-cursor="true"
+              centered-slides="true"
+              autoplay-delay="3000"
+              slides-per-view="auto"
+              coverflow-effect-rotate="50"
+              coverflow-effect-stretch="0"
+              coverflow-effect-depth="100"
+              coverflow-effect-modifier="1"
+              coverflow-effect-slide-shadows="true"
+              style={{
+                width: "100%",
+              }}
+            >
+              {trailForModal?.image?.map((image, index) => {
+                return (
+                  <swiper-slide
                     style={{
-                      backgroundImage: `url(${image})`,
-                      backgroundSize: "cover",
-                      backgroundRepeat: "no-repeat",
+                      height: "400px",
+                      width: "400px",
                       backgroundPosition: "center",
+                      backgroundSize: "cover",
                     }}
-                  ></Box>
-                </swiper-slide>
-              );
-            })}
+                    key={index}
+                  >
+                    <Box
+                      display="flex"
+                      justifyContent="center"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        backgroundImage: `url(${image})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                      }}
+                    ></Box>
+                  </swiper-slide>
+                );
+              })}
+            </swiper-container>
           </ModalDialog>
         </Modal>
       </Grid>

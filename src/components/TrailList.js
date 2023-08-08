@@ -43,6 +43,9 @@ const TrailList = () => {
               display: "flex",
               justifyContent: "center",
               backgroundColor: "#C7E8CA",
+              width: "100%",
+              height: "100%",
+              border: "5px solid #013220",
             }}
           >
             <ModalClose
@@ -50,12 +53,50 @@ const TrailList = () => {
                 setOpenModal(false);
               }}
             />
-            <Typography level="h5" sx={{ textAlign: "center" }}>
+            <Typography
+              level="h2"
+              textColor="#013220"
+              sx={{
+                textAlign: "center",
+                marginBottom: "5px",
+              }}
+            >
+              {trailForModal?.name}
+            </Typography>
+            <Typography
+              textColor="#013220"
+              level="h6"
+              sx={{ textAlign: "center", marginBottom: "20px" }}
+            >
               {trailForModal?.details}
             </Typography>
-            <Typography level="body1">
-              {trailForModal?.longDescription}
-            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Typography
+                level="h4"
+                textColor="#013220"
+                sx={{ textAlign: "start", marginBottom: "20px" }}
+              >
+                Did you know?
+              </Typography>
+              <Typography
+                textColor="#013220"
+                level="h6"
+                sx={{
+                  marginBottom: "50px",
+                  textAlign: "center",
+                  maxWidth: "1000px",
+                }}
+              >
+                {trailForModal?.longDescription}
+              </Typography>
+            </Box>
 
             <swiper-container
               effect="coverflow"
@@ -76,8 +117,8 @@ const TrailList = () => {
                 return (
                   <swiper-slide
                     style={{
-                      height: "300px",
-                      width: "300px",
+                      height: "400px",
+                      width: "400px",
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                     }}

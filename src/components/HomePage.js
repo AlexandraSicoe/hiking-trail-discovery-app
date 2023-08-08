@@ -1,8 +1,6 @@
 import { Box, Button, Grid, Typography } from "@mui/joy";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import "swiper/css";
-import "swiper/css/bundle";
 import trailsData from "../data/trails.json";
 import coverImage from "../images/cover.jpeg";
 import Navbar from "./Navbar";
@@ -79,9 +77,16 @@ const HomePage = () => {
         </Grid>
       </Grid>
       <swiper-container
+        effect="coverflow"
+        grab-cursor="true"
+        centered-slides="true"
         autoplay-delay="3000"
-        // autoplay-disable-on-interaction="false"
-        loop="true"
+        slides-per-view="auto"
+        coverflow-effect-rotate="50"
+        coverflow-effect-stretch="0"
+        coverflow-effect-depth="100"
+        coverflow-effect-modifier="1"
+        coverflow-effect-slide-shadows="true"
       >
         {trails?.map((trail, index) => {
           return (

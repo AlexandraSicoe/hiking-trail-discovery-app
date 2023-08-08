@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/joy";
+import { Grid, Typography, Box } from "@mui/joy";
 import trailsData from "../data/trails.json";
 import Navbar from "./Navbar";
 import TrailCard from "./TrailCard";
@@ -11,7 +11,8 @@ const TrailList = () => {
   const [savedTrail, setSavedTrail] = useState([]);
   const { trails } = trailsData;
   const [openModal, setOpenModal] = useState(false);
-  const [moreDetails, setMoreDetails] = useState("");
+  const [trailForModal, setTrailForModal] = useState(null);
+
   useEffect(() => {
     let lsTrail = localStorage.getItem("trail");
     lsTrail = JSON.parse(lsTrail);
@@ -28,9 +29,8 @@ const TrailList = () => {
               <TrailCard
                 key={index}
                 trail={trail}
-                moreDetails={trail.details}
+                setTrailForModal={setTrailForModal}
                 setOpenModal={setOpenModal}
-                setMoreDetails={setMoreDetails}
                 savedTrail={savedTrail}
                 setSavedTrail={setSavedTrail}
               />
@@ -42,8 +42,6 @@ const TrailList = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              width: "200px",
-              height: "200px",
               backgroundColor: "#C7E8CA",
             }}
           >
@@ -53,8 +51,54 @@ const TrailList = () => {
               }}
             />
             <Typography level="h5" sx={{ textAlign: "center" }}>
-              {moreDetails}
+              {trailForModal?.details}
             </Typography>
+            <Typography level="body1">
+              {trailForModal?.longDescription}
+            </Typography>
+
+            <swiper-container
+              effect="coverflow"
+              grab-cursor="true"
+              centered-slides="true"
+              autoplay-delay="3000"
+              slides-per-view="auto"
+              coverflow-effect-rotate="50"
+              coverflow-effect-stretch="0"
+              coverflow-effect-depth="100"
+              coverflow-effect-modifier="1"
+              coverflow-effect-slide-shadows="true"
+              style={{
+                width: "100%",
+              }}
+            >
+              {trailForModal?.image?.map((image, index) => {
+                return (
+                  <swiper-slide
+                    style={{
+                      height: "300px",
+                      width: "300px",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                    key={index}
+                  >
+                    <Box
+                      display="flex"
+                      justifyContent="center"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        backgroundImage: `url(${image})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                      }}
+                    ></Box>
+                  </swiper-slide>
+                );
+              })}
+            </swiper-container>
           </ModalDialog>
         </Modal>
       </Grid>

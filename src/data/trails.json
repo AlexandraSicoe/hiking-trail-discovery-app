@@ -3,17 +3,16 @@
     {
       "id": 1,
       "name": "Appalachian Trail",
-      "image": "https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "image": [
+        "https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      ],
       "location": "Eastern US",
       "difficulty": "Hard",
       "description": "The Appalachian Trail is a long hiking trail extending from Georgia to Maine.",
       "longDescription": "The Appalachian Trail is an epic long-distance hiking trail that stretches across the Eastern United States, covering a remarkable distance of 2,200 miles. It begins in Georgia's Springer Mountain and concludes in the majestic Katahdin, Maine. Known for its demanding terrain and diverse landscapes, the trail takes hikers through lush forests, challenging rocky sections, and serene meadows. With an elevation range from 124 feet at its lowest point to an impressive 6,643 feet at its highest, the trail offers a true test of endurance for those seeking an unforgettable journey through the heart of the Appalachian Mountains.",
-      "details": "Length: 2,200 miles. High point: 6,643 feet. Low point: 124 feet.",
-      "detailsImages": [
-        "https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-        "https://images.unsplash.com/reserve/91JuTaUSKaMh2yjB1C4A_IMG_9284.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        "https://images.unsplash.com/photo-1550486686-a496af34a2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-      ]
+      "details": "Length: 2,200 miles. High point: 6,643 feet. Low point: 124 feet."
     },
     {
       "id": 2,

@@ -7,8 +7,7 @@ import Typography from "@mui/joy/Typography";
 const trailCard = ({
   trail,
   setOpenModal,
-  moreDetails,
-  setMoreDetails,
+  setTrailForModal,
   savedTrail,
   setSavedTrail,
 }) => {
@@ -130,8 +129,8 @@ const trailCard = ({
             <Button
               size="sm"
               onClick={() => {
+                setTrailForModal(trail);
                 setOpenModal(true);
-                setMoreDetails(moreDetails);
               }}
             >
               About the trail

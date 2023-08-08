@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/joy";
+import { Button, Grid, Typography, Box } from "@mui/joy";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
@@ -12,7 +12,7 @@ const SavedTrailsList = () => {
   const navigate = useNavigate();
   const [savedTrail, setSavedTrail] = useState([]);
   const [openModal, setOpenModal] = useState(false);
-  const [moreDetails, setMoreDetails] = useState("");
+  const [trailForModal, setTrailForModal] = useState(null);
 
   useEffect(() => {
     let lsTrail = localStorage.getItem("trail");
@@ -39,11 +39,10 @@ const SavedTrailsList = () => {
               <TrailCard
                 key={index}
                 trail={trail}
-                moreDetails={trail.details}
                 setOpenModal={setOpenModal}
-                setMoreDetails={setMoreDetails}
                 savedTrail={savedTrail}
                 setSavedTrail={setSavedTrail}
+                setTrailForModal={setTrailForModal}
               />
             );
           })}
@@ -70,8 +69,6 @@ const SavedTrailsList = () => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              width: "200px",
-              height: "200px",
               backgroundColor: "#C7E8CA",
             }}
           >
@@ -81,8 +78,27 @@ const SavedTrailsList = () => {
               }}
             />
             <Typography level="h5" sx={{ textAlign: "center" }}>
-              {moreDetails}
+              {trailForModal?.details}
             </Typography>
+            <Typography level="body1">
+              {trailForModal?.longDescription}
+            </Typography>
+            {trailForModal?.image?.map((image, index) => {
+              return (
+                <swiper-slide>
+                  <Box
+                    display="flex"
+                    justifyContent="center"
+                    style={{
+                      backgroundImage: `url(${image})`,
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                    }}
+                  ></Box>
+                </swiper-slide>
+              );
+            })}
           </ModalDialog>
         </Modal>
       </Grid>

@@ -10,6 +10,8 @@ import TrailList from "./components/TrailList";
 // import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
 import "./index.css";
+import "swiper/css";
+import "swiper/css/bundle";
 import reportWebVitals from "./reportWebVitals";
 
 // register Swiper custom elements
